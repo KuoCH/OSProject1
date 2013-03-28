@@ -51,7 +51,7 @@ int SysPrintInt(int op){
     length++;
     tmp/=10;
   }
-  char out[length+neg];
+  char out[length+neg+1];
   if(neg) out[0]='-';
   if(neg) tmp=-op; else tmp=op;
   for(int iter=length+neg;iter>=neg;iter--){
